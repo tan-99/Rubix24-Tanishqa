@@ -14,9 +14,9 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 z-50">
-      <div className="md:flex md:items-center justify-between py-4 bg-white bg-opacity-100 md:px-10 px-7">
-        <div className="font-bold text-2xl cursor-pointer flex items-center text-indigo-800">
+    <div className="block shadow-md w-full fixed top-0 left-0 z-50">
+      <div className="md:flex md:items-center justify-between py-4 bg-pink-600 bg-opacity-100 md:px-10 px-7">
+        <div className="font-bold text-2xl cursor-pointer flex items-center text-amber-400">
           <span></span>
           Shreni
         </div>
@@ -37,7 +37,7 @@ const Navbar = () => {
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
               <a
                 href="{link.link}"
-                className="text-gray-800 hover:text-gray-400 duration-500"
+                className="text-zinc-50 hover:text-amber-400 duration-500"
               >
                 {link.name}
               </a>
@@ -46,7 +46,7 @@ const Navbar = () => {
 
           <button
             onClick={() => navigate("/signup")}
-            className="bg-indigo-800 text-white py-2 px-4 rounded md:ml-8 hover:bg-indigo-400 duration-500 flex items-center uppercase"
+            className="bg-pink-600 text-amber-400 font-bold border-2 border-amber-400 py-2 px-4 rounded md:ml-8 hover:bg-amber-400 hover:text-pink-600 duration-500 flex items-center uppercase"
           >
             Login with{" "}
             <span className="text-2xl ml-2">

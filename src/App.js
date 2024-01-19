@@ -5,6 +5,8 @@ import './App.css';
 import Home from "./pages/Home";
 import UserRegistration from "./pages/UserRegistration";
 import BusinessRegistration from "./pages/BusinessRegistration";
+import BusinessDashboard from "./pages/BusinessDashboard";
+import ComparePg from "./pages/ComparePg";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/userRegister" element={<UserRegistration />}></Route>
         <Route path="/businessRegister" element={<BusinessRegistration />}></Route>
+        <Route path="/businessDashboard" element={<BusinessDashboard />}></Route>
+        <Route path="/compare" element={<ComparePg />}></Route>
       </Routes>
     </div>
   );
